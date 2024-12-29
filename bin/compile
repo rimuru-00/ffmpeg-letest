@@ -11,38 +11,6 @@ FFMPEG_DIR="$VENDOR_DIR/ffmpeg"
 
 echo "-----> Installing FFmpeg with full support"
 
-# Install build dependencies
-apt-get update -qq
-apt-get install -y \
-    autoconf \
-    automake \
-    build-essential \
-    cmake \
-    git-core \
-    libass-dev \
-    libfreetype6-dev \
-    libgnutls28-dev \
-    libmp3lame-dev \
-    libsdl2-dev \
-    libtool \
-    libva-dev \
-    libvdpau-dev \
-    libvorbis-dev \
-    libxcb1-dev \
-    pkg-config \
-    texinfo \
-    wget \
-    yasm \
-    zlib1g-dev \
-    nasm \
-    libx264-dev \
-    libx265-dev \
-    libnuma-dev \
-    libvpx-dev \
-    libfdk-aac-dev \
-    libopus-dev \
-    librtmp-dev
-
 mkdir -p $VENDOR_DIR
 mkdir -p $FFMPEG_DIR
 cd $VENDOR_DIR
